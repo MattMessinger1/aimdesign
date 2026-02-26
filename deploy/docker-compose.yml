@@ -1,0 +1,8 @@
+services:
+  obf-lab:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    ports:
+      - "8866:8866"
+    restart: unless-stopped
